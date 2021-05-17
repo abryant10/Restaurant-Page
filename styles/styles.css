@@ -32,3 +32,11 @@ padding: 20px;
 .hours {
     margin-top: 50px;
 }
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+
+}
+.navButton {
+    display: flex;
+}
