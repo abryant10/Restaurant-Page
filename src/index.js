@@ -1,1 +1,7 @@
-console.log('webpack test 2');
+import {pageLoadHome} from './home.js';
+
+let content = document.getElementById('content');
+
+pageLoadHome(content);
+
+
