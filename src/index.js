@@ -1,18 +1,18 @@
 import {pageLoadHome} from './home.js';
 import {loadContact} from './contact.js';
+import {loadMenu} from './menu.js';
 
 let content = document.getElementById('content');
 let dynamicContent = document.getElementById('dynamicContent');
 
 pageLoadHome(content, dynamicContent);
 
-function contactClicked () {
+function buttonClicked (button) {
     while (dynamicContent.firstChild){
         dynamicContent.removeChild(dynamicContent.lastChild);
     }
-    loadContact(dynamicContent);
+    button(dynamicContent);
 }
-
 
 window.addEventListener('click', function (e) {
     switch (e.target.id) {
@@ -20,10 +20,10 @@ window.addEventListener('click', function (e) {
             window.location.reload(true);
             break;
         case 'menuButton':
-            console.log('menu');
+            buttonClicked(loadMenu);
             break;
         case 'contactButton':
-            contactClicked();
+            buttonClicked(loadContact);
             break;
         default:
             return;

@@ -3,29 +3,33 @@ function pageLoadHome (content, dynamicContent) {
     logoHeader.classList.add('logoHeader');
     
     let martys = document.createElement('span');
-    martys.innerHTML = "Marty's";
+    martys.innerHTML = "Kaila";
     
     let martini = document.createElement('img');
-    martini.src = '/styles/martini.jpeg';
+    martini.src = '/styles/martini.png';
     martini.alt = 'martini glass';
     martini.width = '100';
     martini.height = '100';
+    martini.classList.add('martiniIcon');
 
     let buttonContainer = document.createElement('div');
     buttonContainer.classList.add('buttonContainer');
 
     let homeButton = document.createElement('button');
     homeButton.classList.add('navButton');
+    homeButton.classList.add('homeButon');
     homeButton.id = 'homeButton';
     homeButton.innerHTML = 'Home';
 
     let menuButton = document.createElement('button');
     menuButton.classList.add('navButton');
+    menuButton.classList.add('menuButton');
     menuButton.id = 'menuButton';
     menuButton.innerHTML = 'Menu';
 
     let contactButton = document.createElement('button');
     contactButton.classList.add('navButton')
+    contactButton.classList.add('contactButton');
     contactButton.id = 'contactButton';
     contactButton.innerHTML = 'Contact';
 
@@ -34,8 +38,8 @@ function pageLoadHome (content, dynamicContent) {
 
     let bio = document.createElement('div');
     bio.classList.add('bio');
-    bio.innerHTML = `Marty's opened in 1991 and has been 
-        serving the dirtiest of martinis every day since.`;
+    bio.innerHTML = `Marty's opened in 1993 and has been 
+        serving the dirtiest of martinis ever since.`;
 
     let hours = document.createElement('div');
     hours.classList.add('hours');
