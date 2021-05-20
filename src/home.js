@@ -3,7 +3,7 @@ function pageLoadHome (content, dynamicContent) {
     logoHeader.classList.add('logoHeader');
     
     let martys = document.createElement('span');
-    martys.innerHTML = "Kaila";
+    martys.innerHTML = "Marty's";
     
     let martini = document.createElement('img');
     martini.src = '/styles/martini.png';
@@ -39,11 +39,33 @@ function pageLoadHome (content, dynamicContent) {
     let bio = document.createElement('div');
     bio.classList.add('bio');
     bio.innerHTML = `Marty's opened in 1993 and has been 
-        serving the dirtiest of martinis ever since.`;
+        serving the highest quality cocktails ever since. <br><br>Located in the heart of 
+        Uptown Dallas, we are located along the McKinney Ave M trolly line. 
+        <br><br> Join us any night of the week for a one of kind experince!`;
 
-    let hours = document.createElement('div');
-    hours.classList.add('hours');
-    hours.innerHTML = 'Open 11:00am - 2:00am';
+    let homePhotoOne = document.createElement('img');
+    homePhotoOne.classList.add('homePhotoOne');
+    homePhotoOne.src = '/styles/homePhotoOne.jpg';
+    homePhotoOne.alt = 'three martini photos';
+    homePhotoOne.width = '200';
+    homePhotoOne.height = '200';
+
+    let homePhotoTwo = document.createElement('img');
+    homePhotoTwo.classList.add('homePhotoTwo');
+    homePhotoTwo.src = '/styles/homePhotoTwo.jpg';
+    homePhotoTwo.alt = 'charcuterie board photo';
+    homePhotoTwo.width = '200';
+    homePhotoTwo.height = '200';
+
+    let homePhotoThree = document.createElement('img');
+    homePhotoThree.classList.add('homePhotoThree');
+    homePhotoThree.src = '/styles/homePhotoThree.jpg';
+    homePhotoThree.alt = 'charcuterie board photo';
+    homePhotoThree.width = '200';
+    homePhotoThree.height = '200';
+
+    let homePhotoContainer = document.createElement('div');
+    homePhotoContainer.classList.add('homePhotoContainer');
 
     content.appendChild(logoHeader);
     logoHeader.appendChild(martys);
@@ -54,7 +76,10 @@ function pageLoadHome (content, dynamicContent) {
     buttonContainer.appendChild(contactButton);
     dynamicContent.appendChild(aboutBody);
     aboutBody.appendChild(bio);
-    aboutBody.appendChild(hours);
+    aboutBody.appendChild(homePhotoContainer);
+    homePhotoContainer.appendChild(homePhotoOne);
+    homePhotoContainer.appendChild(homePhotoTwo);
+    homePhotoContainer.appendChild(homePhotoThree);
 
 };
 
