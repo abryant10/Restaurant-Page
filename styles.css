@@ -2,7 +2,7 @@ html {
     font-family: copperplate;
 }
 body {
-    background-image: url("/styles/BackgroundMartini.jpg");
+    background-image: url("styles/BackgroundMartini.jpg");
     background-position: top;
     background-size: 1fr;
     background-color: black;
