@@ -6,7 +6,7 @@ function pageLoadHome (content, dynamicContent) {
     martys.innerHTML = "Marty's";
     
     let martini = document.createElement('img');
-    martini.src = './styles/martini.png';
+    martini.src = 'styles/martini.png';
     martini.alt = 'martini glass';
     martini.width = '100';
     martini.height = '100';
@@ -45,21 +45,21 @@ function pageLoadHome (content, dynamicContent) {
 
     let homePhotoOne = document.createElement('img');
     homePhotoOne.classList.add('homePhotoOne');
-    homePhotoOne.src = './styles/homePhotoOne.jpg';
+    homePhotoOne.src = 'styles/homePhotoOne.jpg';
     homePhotoOne.alt = 'three martini photos';
     homePhotoOne.width = '200';
     homePhotoOne.height = '200';
 
     let homePhotoTwo = document.createElement('img');
     homePhotoTwo.classList.add('homePhotoTwo');
-    homePhotoTwo.src = './styles/homePhotoTwo.jpg';
+    homePhotoTwo.src = 'styles/homePhotoTwo.jpg';
     homePhotoTwo.alt = 'charcuterie board photo';
     homePhotoTwo.width = '200';
     homePhotoTwo.height = '200';
 
     let homePhotoThree = document.createElement('img');
     homePhotoThree.classList.add('homePhotoThree');
-    homePhotoThree.src = './styles/homePhotoThree.jpg';
+    homePhotoThree.src = 'styles/homePhotoThree.jpg';
     homePhotoThree.alt = 'charcuterie board photo';
     homePhotoThree.width = '200';
     homePhotoThree.height = '200';
